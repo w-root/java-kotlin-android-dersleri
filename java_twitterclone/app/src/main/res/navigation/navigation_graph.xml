@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/navigation_feed">
+
+    <fragment
+        android:id="@+id/navigation_communities"
+        android:name="com.example.java_twitterclone.Views.Fragments.BottomNavigation.CommunitiesFragment"
+        android:label="fragment_communities"
+        tools:layout="@layout/fragment_communities" />
+    <fragment
+        android:id="@+id/navigation_feed"
+        android:name="com.example.java_twitterclone.Views.Fragments.BottomNavigation.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" >
+        <action
+            android:id="@+id/action_navigation_feed_to_addTweetFragment"
+            app:destination="@id/addTweetFragment"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_message"
+        android:name="com.example.java_twitterclone.Views.Fragments.BottomNavigation.MessageFragment"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" />
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.java_twitterclone.Views.Fragments.BottomNavigation.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.java_twitterclone.Views.Fragments.BottomNavigation.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/addTweetFragment"
+        android:name="com.example.java_twitterclone.Views.Fragments.AddTweetFragment"
+        android:label="fragment_add_tweet"
+        tools:layout="@layout/fragment_add_tweet" >
+        <action
+            android:id="@+id/action_addTweetFragment_to_navigation_feed"
+            app:destination="@id/navigation_feed" />
+    </fragment>
+
+
+</navigation>

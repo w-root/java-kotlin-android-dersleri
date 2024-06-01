@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:contentDescription="asd"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/empty_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/Circular"
+        />
+
+    <TextView
+        android:id="@+id/tvTweetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
+        android:text="Fenerbahçe SK"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTweetUsername"
+        android:layout_width="145dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="\@Fenerbahçe : 22h"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTweetDescription"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="40dp"
+        android:text="Isınmadayız.\n\n#ADSvFB"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTweetName" />
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTweetDescription">
+
+<!--        <ImageView-->
+<!--            android:id="@+id/tweetImageView1"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_row="0"-->
+<!--            android:layout_column="0"-->
+<!--            tools:layout_editor_absoluteX="199dp"-->
+<!--            tools:layout_editor_absoluteY="170dp"-->
+<!--            tools:srcCompat="@tools:sample/avatars" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/tweetImageView2"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_row="0"-->
+<!--            android:layout_column="1"-->
+<!--            tools:layout_editor_absoluteX="224dp"-->
+<!--            tools:layout_editor_absoluteY="210dp"-->
+<!--            tools:srcCompat="@tools:sample/avatars" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/tweetImageView3"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_row="1"-->
+<!--            android:layout_column="0"-->
+<!--            tools:layout_editor_absoluteX="70dp"-->
+<!--            tools:layout_editor_absoluteY="108dp"-->
+<!--            tools:srcCompat="@tools:sample/avatars" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/tweetImageView4"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_row="1"-->
+<!--            android:layout_column="1"-->
+<!--            tools:layout_editor_absoluteX="71dp"-->
+<!--            tools:layout_editor_absoluteY="210dp"-->
+<!--            tools:srcCompat="@tools:sample/avatars" />-->
+
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="301dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout">
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:backgroundTint="@color/white"
+            app:srcCompat="@drawable/ic_outline_mode_comment_24"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="319dp" />
+
+        <TextView
+            android:id="@+id/tvNumberOfComments"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:text="661"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="248dp"
+            tools:layout_editor_absoluteY="319dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:backgroundTint="@color/white"
+            app:srcCompat="@drawable/ic_baseline_repeat_24"
+            tools:layout_editor_absoluteX="143dp"
+            tools:layout_editor_absoluteY="319dp" />
+
+        <TextView
+            android:id="@+id/tvNumberOfRetweet"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:text="661"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="171dp"
+            tools:layout_editor_absoluteY="319dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:backgroundTint="@color/white"
+            app:srcCompat="@drawable/ic_baseline_favorite_border_24"
+            tools:layout_editor_absoluteX="220dp"
+            tools:layout_editor_absoluteY="319dp" />
+
+        <TextView
+            android:id="@+id/tvNumberOfLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:text="661"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="319dp" />
+
+        <TextView
+            android:id="@+id/tvNumberOfViews"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:drawableLeft="@drawable/ic_baseline_stacked_bar_chart_24"
+            android:text="122M"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="289dp"
+            tools:layout_editor_absoluteY="319dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:backgroundTint="@color/white"
+            app:srcCompat="@drawable/ic_outline_share_24"
+            tools:layout_editor_absoluteX="349dp"
+            tools:layout_editor_absoluteY="319dp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="23dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/tvTweetName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/download2" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="13dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">java_historybookapp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="cities">
+        <item>Seçiniz</item>
+        <item>İstanbul</item>
+        <item>Buenos Ai̇res</item>
+        <item>Moskova</item>
+        <item>Roma</item>
+        <item>Johannesburg</item>
+        <item>Sao Paulo</item>
+        <item>Abu Dabi̇</item>
+        <item>Budapeşte</item>
+        <item>Pari̇s</item>
+        <item>Peki̇n</item>
+        <item>Dubai̇</item>
+        <item>Mi̇ami̇</item>
+        <item>Si̇ngapur</item>
+        <item>Mi̇lano</item>
+        <item>Boston</item>
+        <item>Li̇zbon</item>
+        <item>Hongkon</item>
+        <item>Meksi̇ko</item>
+        <item>Madri̇d</item>
+        <item>Şanghay</item>
+        <item>Si̇dney</item>
+        <item>Melbourne</item>
+        <item>Barcelona</item>
+        <item>Londra</item>
+        <item>Chicago</item>
+        <item>Los Angeles</item>
+        <item>Tokyo</item>
+    </string-array>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "986833791112",
+    "project_id": "currencyapp-b25c4",
+    "storage_bucket": "currencyapp-b25c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986833791112:android:c5b44f4f101f9e9da5d73d",
+        "android_client_info": {
+          "package_name": "com.example.java_currencyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzUMePpDvIg-mSN8pcuM9-8sFLvI4n1Ys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

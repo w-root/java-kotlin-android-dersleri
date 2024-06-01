@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setup_profile_navigation"
+    app:startDestination="@id/setProfileImageFragment2">
+    <fragment
+        android:id="@+id/saveSetupProfileFragment2"
+        android:name="com.example.java_twitterclone.Views.Fragments.SetupProfile.SaveSetupProfileFragment"
+        android:label="fragment_save_setup_profile"
+        tools:layout="@layout/fragment_save_setup_profile" />
+    <fragment
+        android:id="@+id/setBioFragment2"
+        android:name="com.example.java_twitterclone.Views.Fragments.SetupProfile.SetBioFragment"
+        android:label="fragment_set_bio"
+        tools:layout="@layout/fragment_set_bio" >
+        <action
+            android:id="@+id/action_setBioFragment2_to_setUsernameFragment2"
+            app:destination="@id/setUsernameFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/setHeaderImageFragment2"
+        android:name="com.example.java_twitterclone.Views.Fragments.SetupProfile.SetHeaderImageFragment"
+        android:label="fragment_set_header_image"
+        tools:layout="@layout/fragment_set_header_image" >
+        <action
+            android:id="@+id/action_setHeaderImageFragment2_to_setBioFragment2"
+            app:destination="@id/setBioFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/setLocationFragment"
+        android:name="com.example.java_twitterclone.Views.Fragments.SetupProfile.SetLocationFragment"
+        android:label="fragment_set_locaiton"
+        tools:layout="@layout/fragment_set_locaiton" >
+        <action
+            android:id="@+id/action_setLocationFragment_to_saveSetupProfileFragment2"
+            app:destination="@id/saveSetupProfileFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/setUsernameFragment2"
+        android:name="com.example.java_twitterclone.Views.Fragments.SetupProfile.SetUsernameFragment"
+        android:label="fragment_set_username"
+        tools:layout="@layout/fragment_set_username" >
+        <action
+            android:id="@+id/action_setUsernameFragment2_to_setLocationFragment"
+            app:destination="@id/setLocationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setProfileImageFragment2"
+        android:name="com.example.java_twitterclone.Views.Fragments.SetupProfile.SetProfileImageFragment"
+        android:label="fragment_set_profile_image"
+        tools:layout="@layout/fragment_set_profile_image" >
+        <action
+            android:id="@+id/action_setProfileImageFragment2_to_setHeaderImageFragment2"
+            app:destination="@id/setHeaderImageFragment2" />
+    </fragment>
+</navigation>

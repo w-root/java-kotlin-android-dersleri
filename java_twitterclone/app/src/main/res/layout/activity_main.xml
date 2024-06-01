@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.Activities.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/xlogo" />
+    </androidx.appcompat.widget.Toolbar>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:gravity="center">
+
+      <TextView
+          android:id="@+id/textView"
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="70dp"
+          android:text="See what's \nhappening in the \nworld right now."
+          android:textColor="#000000"
+          android:textSize="32sp"
+          android:textStyle="bold"
+          tools:layout_editor_absoluteX="56dp"
+          tools:layout_editor_absoluteY="92dp" />
+
+      <Button
+          android:id="@+id/button"
+          android:layout_width="300dp"
+          android:layout_height="55dp"
+          android:backgroundTint="@color/white"
+          android:text="Continue with Google"
+          android:textAllCaps="false"
+          android:textColor="#000000"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          app:cornerRadius="100dp"
+          app:icon="@drawable/googleg_standard_color_18"
+          app:iconPadding="0dp"
+          app:iconTint="@color/black"
+          app:iconTintMode="add"
+          app:layout_constraintCircleRadius="20dp"
+          tools:layout_editor_absoluteX="56dp"
+          tools:layout_editor_absoluteY="283dp" />
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:orientation="horizontal">
+
+          <View
+              android:id="@+id/divider2"
+              android:layout_width="140dp"
+              android:layout_height="1dp"
+              android:background="?android:attr/listDivider"
+              tools:layout_editor_absoluteX="214dp"
+              tools:layout_editor_absoluteY="345dp" />
+
+          <TextView
+              android:id="@+id/textView2"
+              android:layout_width="15dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+              android:text="or"
+              tools:layout_editor_absoluteX="179dp"
+              tools:layout_editor_absoluteY="333dp" />
+
+          <View
+              android:id="@+id/divider"
+              android:layout_width="140dp"
+              android:layout_height="1dp"
+              android:background="?android:attr/listDivider"
+              tools:layout_editor_absoluteX="47dp"
+              tools:layout_editor_absoluteY="344dp" />
+      </LinearLayout>
+
+      <Button
+          android:id="@+id/button2"
+          android:layout_width="300dp"
+          android:layout_height="55dp"
+          android:layout_marginBottom="10dp"
+          android:backgroundTint="@color/black"
+          android:onClick="goToSignupPage"
+          android:text="Create account"
+          android:textAllCaps="false"
+          android:textColor="#FFFFFF"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          app:cornerRadius="100dp"
+          tools:layout_editor_absoluteX="56dp"
+          tools:layout_editor_absoluteY="367dp" />
+
+      <TextView
+          android:id="@+id/textView3"
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="20dp"
+          android:text="By signin up, you agree to our Terms,Privacy Policy and Cokkie Use."
+          tools:layout_editor_absoluteX="56dp"
+          tools:layout_editor_absoluteY="92dp" />
+
+      <LinearLayout
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:gravity="start">
+
+          <TextView
+              android:id="@+id/textView4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Have an account already? "
+              android:textSize="16sp"
+              tools:layout_editor_absoluteX="56dp"
+              tools:layout_editor_absoluteY="92dp" />
+
+          <TextView
+              android:id="@+id/textView5"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:onClick="goToLoginPage"
+              android:text="Log in"
+              android:textColor="#9231E6"
+              android:textSize="16sp"
+              tools:layout_editor_absoluteX="56dp"
+              tools:layout_editor_absoluteY="92dp" />
+
+      </LinearLayout>
+
+
+  </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
